@@ -15,12 +15,7 @@
 >
     <testsuites>
         <testsuite name="Browser Detector Test Suite">
-            <directory suffix="Test.php">./tests</directory>
+            <directory suffix="Test.php">./src</directory>
         </testsuite>
     </testsuites>
-    <filter>
-        <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./src</directory>
-        </whitelist>
-    </filter>
 </phpunit>
