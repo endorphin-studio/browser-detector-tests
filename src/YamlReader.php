@@ -20,9 +20,9 @@ class YamlReader
 
     public function __construct()
     {
-        $this->rootDirectory = dirname(__DIR__);
+        $this->rootDirectory = dirname(__DIR__) . '/var';
         $this->parser = new Parser();
-        $this->config = $this->parser->parseFile(sprintf("%s/var/config.yaml", $this->rootDirectory));
+        $this->config = $this->parser->parseFile(sprintf("%s/config.yaml", $this->rootDirectory));
         $this->configDirectory = sprintf($this->config['configDir'], $this->rootDirectory);
     }
 
