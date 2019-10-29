@@ -15,7 +15,7 @@
     "endorphin-studio/browser-detector-tools": ">=1.0.0",
     "phpunit/phpunit": "6.5.14",
     "doctrine/instantiator": "1.0.5"
-  }
+  },
   "autoload": {
     "psr-4": { "EndorphinStudio\\Tests\\": "src/" }
   }
