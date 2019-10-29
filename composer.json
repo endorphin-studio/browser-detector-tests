@@ -1,0 +1,25 @@
+{
+  "name": "endorphin-studio/browser-detector-tests",
+  "description": "Tests for endorphin-studio/browser-detector",
+  "minimum-stability": "stable",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Serhii Nekhaienko",
+      "email": "sergey.nekhaenko@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0 <7.3",
+    "endorphin-studio/browser-detector-tools": ">=1.0.0"
+  },
+  "require-dev":
+  {
+    "phpunit/phpunit": "6.5.14",
+    "doctrine/instantiator": "1.0.5"
+  },
+  "autoload": {
+    "psr-4": { "EndorphinStudio\\Tests\\": "src/" }
+  }
+}
