@@ -1,7 +1,7 @@
 {
   "name": "endorphin-studio/browser-detector-tests",
   "description": "Tests for endorphin-studio/browser-detector",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -13,6 +13,7 @@
   "require": {
     "php": ">=7.0",
     "endorphin-studio/browser-detector-tools": ">=1.0.0",
+    "endorphin-studio/browser-detector-tests-data": "dev-master",
     "phpunit/phpunit": "^6.5.14"
   },
   "autoload": {

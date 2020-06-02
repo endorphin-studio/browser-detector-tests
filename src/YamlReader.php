@@ -15,15 +15,17 @@ class YamlReader
 {
     private $rootDirectory;
     private $configDirectory;
+    private $dataDirectory;
     private $config;
     private $parser;
 
     public function __construct()
     {
         $this->rootDirectory = dirname(__DIR__) . '/var';
+        $this->dataDirectory = dirname(__DIR__, 2);
         $this->parser = new Parser();
         $this->config = $this->parser->parseFile(sprintf("%s/config.yaml", $this->rootDirectory));
-        $this->configDirectory = sprintf($this->config['configDir'], $this->rootDirectory);
+        $this->configDirectory = sprintf($this->config['configDir'], $this->dataDirectory);
     }
 
     public function getTestCases($type = 'none'): array
