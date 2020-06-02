@@ -6,7 +6,7 @@
 # @project endorphin-studio/browser-detector
 ########################################################################
 checkList:
-  name: Playstation 4
+  name: Playstation Os
   type: console
   version: 7.0
 uaList:
