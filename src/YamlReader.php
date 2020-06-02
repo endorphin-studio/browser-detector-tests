@@ -28,7 +28,7 @@ class YamlReader
         $this->parser = new Parser();
         $this->directories = [
             '{root}' => $this->rootDirectory,
-            '{vendor}' => $this->rootDirectory
+            '{vendor}' => $this->vendorDirectory
         ];
         $this->config = $this->parser->parseFile(strtr("{root}/config.yaml", $this->directories));
         $this->dataDirectory = strtr($this->config['dataRepo'], $this->directories);
