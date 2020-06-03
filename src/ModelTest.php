@@ -17,7 +17,7 @@ class ModelTest extends BaseTest
 {
     public static $type = 'model';
 
-    public function testBase(): void
+    public function testBase()
     {
         error_reporting(E_ALL);
         if (static::$type === 'none') {

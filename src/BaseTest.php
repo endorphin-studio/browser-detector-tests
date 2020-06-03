@@ -31,7 +31,7 @@ class BaseTest extends TestCase
         }
     }
 
-    public function testBase(): void
+    public function testBase()
     {
         error_reporting(E_ALL);
         if (static::$type === 'none') {
