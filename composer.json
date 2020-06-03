@@ -11,10 +11,10 @@
     }
   ],
   "require": {
-    "php": ">=7.0",
+    "php": ">=7.3",
     "endorphin-studio/browser-detector-tools": "^1.2",
     "endorphin-studio/browser-detector-tests-data": "1.0",
-    "phpunit/phpunit": "^6.5.14"
+    "phpunit/phpunit": "^9.1.5"
   },
   "autoload": {
     "psr-4": { "EndorphinStudio\\Tests\\": "src/" }
