@@ -12,7 +12,7 @@
   ],
   "require": {
     "php": ">=7.0",
-    "endorphin-studio/browser-detector-tools": ">=1.0.0",
+    "endorphin-studio/browser-detector-tools": "dev-develop",
     "endorphin-studio/browser-detector-tests-data": "dev-master",
     "phpunit/phpunit": "^6.5.14"
   },

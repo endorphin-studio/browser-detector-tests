@@ -11,5 +11,4 @@ testObjects:
     browser: "{config}/browser/"
     os: "{config}/os/"
     device: "{config}/device/"
-    robot: "{config}/robot/"
     model: "{config}/model/"
