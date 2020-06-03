@@ -1,14 +1,15 @@
 ########################################################################
-# @author Serhii Nekhaienko <sergey.nekhaenko@gmail.com>
-# @license GPL
-# @copyright Serhii Nekhaienko &copy 2018
-# @version 4.0.0
-# @project endorphin-studio/browser-detector
+# @author Serhii Nekhaienko <serhi.nekhaienko@gmail.com>
+# @license MIT
+# @copyright Serhii Nekhaienko &copy 2020
+# @version 2.0.0
+# @project endorphin-studio/browser-detector-tests
 ########################################################################
-configDir: "%s/yaml/"
+dataRepo: "{vendor}/endorphin-studio/browser-detector-tests-data"
+configDir: "{data}/data"
 testObjects:
-    browser: "%s/browser/"
-    os: "%s/os/"
-    device: "%s/device/"
-    robot: "%s/robot/"
-    model: "%s/model/"
+    browser: "{config}/browser/"
+    os: "{config}/os/"
+    device: "{config}/device/"
+    robot: "{config}/robot/"
+    model: "{config}/model/"

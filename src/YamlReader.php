@@ -15,15 +15,26 @@ class YamlReader
 {
     private $rootDirectory;
     private $configDirectory;
+    private $vendorDirectory;
+    private $dataDirectory;
     private $config;
     private $parser;
+    private $directories = [];
 
     public function __construct()
     {
         $this->rootDirectory = dirname(__DIR__) . '/var';
+        $this->vendorDirectory = dirname(__DIR__, 3);
         $this->parser = new Parser();
-        $this->config = $this->parser->parseFile(sprintf("%s/config.yaml", $this->rootDirectory));
-        $this->configDirectory = sprintf($this->config['configDir'], $this->rootDirectory);
+        $this->directories = [
+            '{root}' => $this->rootDirectory,
+            '{vendor}' => $this->vendorDirectory
+        ];
+        $this->config = $this->parser->parseFile(strtr("{root}/config.yaml", $this->directories));
+        $this->dataDirectory = strtr($this->config['dataRepo'], $this->directories);
+        $this->directories['{data}'] = $this->dataDirectory;
+        $this->configDirectory = strtr($this->config['configDir'], $this->directories);
+        $this->directories['{config}'] = $this->configDirectory;
     }
 
     public function getTestCases($type = 'none'): array
@@ -33,7 +44,7 @@ class YamlReader
 
     private function getCase(string $directory)
     {
-        $directory = sprintf($directory, $this->configDirectory);
+        $directory = strtr($directory, $this->directories);
         return ['cases' => $this->getConfig($directory)];
     }
 
