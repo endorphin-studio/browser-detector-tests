@@ -12,8 +12,8 @@
   ],
   "require": {
     "php": ">=7.3",
-    "endorphin-studio/browser-detector-tools": ">=1.0.0",
-    "endorphin-studio/browser-detector-tests-data": ">=1.0",
+    "endorphin-studio/browser-detector-tools": "^1.2",
+    "endorphin-studio/browser-detector-tests-data": "1.0",
     "phpunit/phpunit": "^9.1.5"
   },
   "autoload": {
